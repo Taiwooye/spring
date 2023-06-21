@@ -7,6 +7,10 @@
     <script src="https://kit.fontawesome.com/7b203b8cf3.js" crossorigin="anonymous"></script>
     <title>Spring</title>
     <style>
+         *{
+            margin: 0;
+            font-family: "Quicksand";
+          }
         body{
             overflow-x: hidden;
             margin: 0%;
@@ -61,6 +65,10 @@
             align-items: center;
             gap: 30px;
             text-align: center;
+            text-align: center;
+            text-transform: capitalize;
+            flex: 1 1 200px;
+            max-width: 100%;
         }
         .block2{
             display: flex;
@@ -69,6 +77,10 @@
             gap: 30px;
             text-align: center;
             margin-top: 30px;
+            text-align: center;
+            text-transform: capitalize;
+           flex: 1 1 200px;
+           max-width: 100%;
         }
         .box:hover{
             color: gray;
@@ -119,6 +131,55 @@ h6{
     display: block;
     background-color: brown;
 }
+.box{
+    text-align: center;
+    padding: auto; 
+    border: 1px solid grey; 
+    width: 280px; 
+    border-radius: 4px;
+     height: 320px;
+}
+@media only screen and (max-width:600px){
+    *{
+            min-width: 90wh;
+          }
+          .fav{
+            display: none;
+          }
+          .block1{
+            display: flex;
+            flex-wrap: wrap;
+           flex: 1 0 200px;
+            justify-content: center;
+          text-align: center;
+          align-items: center;
+         gap: 10px;
+           margin: auto;
+          }
+          .block2{
+            display: flex;
+            flex-wrap: wrap;
+           flex: 1 0 200px;
+            justify-content: center;
+          text-align: center;
+          align-items: center;
+         gap: 10px;
+           margin: auto;
+          }
+
+          h3{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+          align-items: center;
+          }
+          .butt{
+            padding: 10px;
+         max-width: 100%;
+            justify-content: center;
+          align-items: center;
+          }
+}
     </style>
 </head>
 <body>
@@ -136,7 +197,7 @@ h6{
         <a class="fav">Community <i class="fa-solid fa-angle-down"></i></a> 
        </div>
    </nav> 
-   <div style="background-color: grey;height: 400px;margin-top: 10px; width: 1500px;">
+   <div style="background-color: grey;height: 400px;margin-top: 10px;">
        <h2>Spring makes java <br>modern.</h2>
        <div class="butt">
 <button>WHY SPRING</button> <button>QUICK START</button>
@@ -145,29 +206,30 @@ h6{
    <br>
    <br>
    <h3>What Spring can do</h3>
+   <br>
    <div>
        <div class="block1">
-        <div class="box" style="text-align: center;padding: auto; border: 1px solid grey; width: 280px; border-radius: 4px; height: 320px;">
+        <div class="box" >
             <img class="img" src="./images/spring b.jpg" width="120px" alt="">
            <h1>Microservices</h1>
            <p style="font-size: 20px;">
             Quickly deliver production grade-features with independently evolable Microservices
            </p>
         </div>
-        <div class="box" style="text-align: center; padding: auto; border: 1px solid grey; width: 280px; border-radius: 4px;height: 320px;">
+        <div class="box">
             <img class="img" src="./images/spriing.jpg" width="120px" alt="">
 <h1>Reactive</h1>
 <p style="font-size: 20px;">
 Spring's asynchronous, nonblocking architecture means you can get more from your computing resources.</p>
         </div>
-<div class="box" style="text-align: center;padding: auto;border: 1px solid grey; width: 280px; border-radius: 4px; height: 320px;">
+<div class="box">
     <img class="img" src="./images/spring b.jpg" width="120px" alt="">
 <h1>Cloud</h1>
 <p style="font-size: 20px;">
 Your code,any cloud we've got you covered. Connect and scale your services, whatever your platform.
 </p>
 </div>
-<div class="box" style="text-align: center;padding: auto; border: 1px solid grey;width: 280px; border-radius: 4px; height: 320px;">
+<div class="box"
 <img class="img" src="./images/spri.jpg" width="120px" alt="">
 <h1>Web apps</h1>
 <p style="font-size: 20px;">
@@ -175,20 +237,20 @@ Frameworks for fast,secure, and responsive web application connected to any data
 </div>
         </div>
         <div class="block2">
-        <div class="box" style="text-align: center;padding: auto;border: 1px solid grey;width: 280px;border-radius: 4px;height: 320px;">
+        <div class="box" >
 <img class="img" src="./images/spriing.jpg" width="120px" alt="">
 <h1>Serverless</h1>
 <p style="font-size: 20px;">
 The ultimate flexibility, Scale up on demand and scale to zero when there's no demand.
 </p> </div>
-<div class="box" style="text-align: center;padding: auto;border: 1px solid grey;width: 280px;border-radius: 4px;height: 320px;">
+<div class="box">
     <img class="img" src="./images/spriing.jpg" width="120px" alt="">
 <h1>Event Driven</h1>
 <p style="font-size: 20px;">
     Integrate with your enterprise. React to business events, Act on your streaming data in realtime.
 </p>
 </div>
-<div class="box" style="text-align: center;padding: auto;border: 1px solid gray;width: 280px;border-radius: 4px;height:320px;">
+<div class="box">
 <img class="img" src="./images/spring b.jpg" width="120px" alt="">
 <h1>Batch</h1>
 <p style="font-size: 20px;">
